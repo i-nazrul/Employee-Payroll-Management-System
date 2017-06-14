@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 24, 2017 8:24:48 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.nazrul.model.Allowance" table="allowance" catalog="emppayroll" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="overtime" type="double">
+            <column name="overtime" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="medical" type="double">
+            <column name="medical" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="bonus" type="double">
+            <column name="bonus" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="other" type="double">
+            <column name="other" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="empId" type="int">
+            <column name="emp_id" not-null="true" />
+        </property>
+        <property name="salary" type="double">
+            <column name="salary" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="rate" type="double">
+            <column name="rate" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="totalAllowance" type="double">
+            <column name="total_allowance" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="firstname" type="string">
+            <column name="firstname" length="45" not-null="true" />
+        </property>
+        <property name="lastname" type="string">
+            <column name="lastname" length="45" not-null="true" />
+        </property>
+        <property name="createdBy" type="string">
+            <column name="created_by" length="45" not-null="true" />
+        </property>
+        <property name="totalOvertime" type="double">
+            <column name="totalOvertime" precision="22" scale="0" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 24, 2017 8:24:48 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.nazrul.model.StaffInformation" table="staff_information" catalog="emppayroll" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="firstName" type="string">
+            <column name="first_name" length="45" not-null="true" />
+        </property>
+        <property name="lastname" type="string">
+            <column name="lastname" length="45" not-null="true" />
+        </property>
+        <property name="dob" type="string">
+            <column name="dob" length="45" not-null="true" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="45" not-null="true" />
+        </property>
+        <property name="mobile" type="string">
+            <column name="mobile" length="45" not-null="true" />
+        </property>
+        <property name="presentaddress" type="string">
+            <column name="presentaddress" length="45" not-null="true" />
+        </property>
+        <property name="department" type="string">
+            <column name="department" length="45" not-null="true" />
+        </property>
+        <property name="image" type="binary">
+            <column name="image" not-null="true" />
+        </property>
+        <property name="gender" type="string">
+            <column name="gender" length="6" not-null="true" />
+        </property>
+        <property name="salary" type="double">
+            <column name="salary" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="permanentaddress" type="string">
+            <column name="permanentaddress" length="45" not-null="true" />
+        </property>
+        <property name="district" type="string">
+            <column name="district" length="45" not-null="true" />
+        </property>
+        <property name="postCode" type="string">
+            <column name="post_code" length="45" not-null="true" />
+        </property>
+        <property name="designation" type="string">
+            <column name="designation" length="45" not-null="true" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="45" not-null="true" />
+        </property>
+        <property name="dateHired" type="string">
+            <column name="date_hired" length="45" not-null="true" />
+        </property>
+        <property name="jobTitle" type="string">
+            <column name="job_title" length="45" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

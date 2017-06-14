@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 24, 2017 8:24:48 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.nazrul.model.Audit" table="audit" catalog="emppayroll" optimistic-lock="version">
+        <id name="auditId" type="java.lang.Integer">
+            <column name="audit_id" />
+            <generator class="identity" />
+        </id>
+        <property name="empId" type="int">
+            <column name="emp_id" not-null="true" />
+        </property>
+        <property name="date" type="string">
+            <column name="date" length="45" not-null="true" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="45" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
