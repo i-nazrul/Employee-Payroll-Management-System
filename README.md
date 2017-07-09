@@ -1,2 +1,3 @@
 # Employee-Payroll-Management-System
-Used Technologies : Java Swing, Spring, Hibernate, Maven, MYSQL  IDE: NetBeans 
+<b>Used Technologies :</b> Java Swing, Spring, Hibernate, MYSQL, Maven</br>
+<b>IDE:</b> NetBeans 
